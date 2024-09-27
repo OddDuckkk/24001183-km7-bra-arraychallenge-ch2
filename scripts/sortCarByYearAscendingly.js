@@ -12,6 +12,7 @@ function sortCarByYearAscendingly(cars) {
     swapped = false;
     /* Inner for loop for swapping */
     for (j= 0; j < carsLength - i - 1; j++) {
+      /* Greater than (>) operator to get ascending output*/
       if (result[j].year > result[j+1].year) {
         /* Swap cars if year is greater than the next car's year */
         temp = result[j];
