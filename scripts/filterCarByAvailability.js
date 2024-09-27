@@ -1,12 +1,18 @@
 function filterCarByAvailability(cars) {
-  // Sangat dianjurkan untuk console.log semua hal hehe
+  
   console.log(cars);
 
-  // Tempat penampungan hasil
+  /* Initializing array to contain filter's results  */
   const result = [];
 
-  // Tulis code-mu disini
+  /* For loop for every car in cars */
+  for (let i=0; i<cars.length; i++) {
+    /* Filter selection for every car with attribute available = true */
+    if (cars[i].available)
+    {
+      result.push(cars[i]);
+    }
+  }
 
-  // Rubah code ini dengan array hasil filter berdasarkan availablity
   return result;
 }
